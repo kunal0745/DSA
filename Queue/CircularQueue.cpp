@@ -80,10 +80,6 @@ int main(){
     q.enqueue(50);
     q.dequeue();
     q.enqueue(50);
-
-
-    
-
     q.display();
     q.peek();
     
