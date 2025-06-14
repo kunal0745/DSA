@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int arr[5] = {1,-2,3,4,-5};
+    int arr[5] = {2,-3,6,5,11};
     int maxSum = INT32_MIN;
 
     for(int st = 0; st < 5; st++){

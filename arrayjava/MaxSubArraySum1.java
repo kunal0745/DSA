@@ -10,16 +10,16 @@ public class MaxSubArraySum1 {
 
             for(int en = st; en < nums.length; en++){
                 currSum += nums[en];
+                maxSum = Math.max(currSum, maxSum);
+
             }
-            if(currSum > maxSum){
-                maxSum = currSum;
-            }
+            
         }
         return maxSum;
     }
 
     public static void main(String[] args) {
-        int nums[] = {2,-3,6,5,11};
+        int nums[] = {-2,1,-3,4,-1,2,1,-5,4};
         int  max = maxSubArraySum(nums);
         System.out.println("Max sum is:" + max);
     }

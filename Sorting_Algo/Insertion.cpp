@@ -9,15 +9,19 @@ void insertionSort(int arr[], int n){
         int j = i - 1;
         int temp = arr[i];
 
-        for(; j >= 0; j--){
+        // for(; j >= 0; j--){
 
-            if(arr[j] > temp){
-                arr[j + 1] = arr[j];
-            }
+        //     if(arr[j] > temp){
+        //         arr[j + 1] = arr[j];
+        //     }
 
-            else{
-                break;
-            }
+        //     else{
+        //         break;
+        //     }
+        // }
+        while(j >= 0 && arr[j] > temp){
+            arr[j+1] = arr[j];
+            j--;
         }
         arr[j + 1] = temp;
     }

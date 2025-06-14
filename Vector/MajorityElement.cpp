@@ -96,7 +96,7 @@ int majorityElement(vector<int> nums){
 }
 
 int main(){
-    vector <int> nums = {1,2,2,1,2};
+    vector <int> nums = {2,2,1,1,1,2,2};
     int ans = majorityElement(nums);
     cout << "Majority element is:" << ans;
 

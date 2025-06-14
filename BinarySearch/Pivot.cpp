@@ -1,3 +1,4 @@
+// In a rotated sorted array, the pivot is the smallest element’s index, or the point where rotation happened.
 #include<iostream>
 using namespace std;
 
