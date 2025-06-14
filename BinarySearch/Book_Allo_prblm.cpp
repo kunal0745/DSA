@@ -1,3 +1,17 @@
+// Task:
+// Allocate books to m students such that:
+
+// Each student gets contiguous books.
+
+// Each book is allocated to only one student.
+
+// The maximum number of pages assigned to a student is minimized.
+
+// 🔍 Objective:
+// Minimize the maximum pages assigned to any student after allocation.
+
+
+
 #include<iostream>
 using namespace std;
 
@@ -21,13 +35,15 @@ bool isPossibleSol(int arr[], int n, int m, int mid){
 }
 
 int allocateBooks(int arr[], int n, int m){
-    int s = 0;
+    int maxValue = 0;
     int sum = 0;
 
     for(int i = 0; i < n; i++){
         sum+=arr[i];
+        maxValue = max(maxValue, arr[i]);
     }
 
+    int s = maxValue;
     int e = sum;
     int mid = s + (e-s)/2;
     int ans = -1;

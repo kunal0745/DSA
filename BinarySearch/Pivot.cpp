@@ -21,7 +21,7 @@ int pivotElement(int arr[], int size){
 
 int main(){
     int arr[6] = {7, 10, 13, 1, 5, 6};
-    int pivot = pivotElement(arr , 5);
+    int pivot = pivotElement(arr , 6);
     cout << "pivot element is at index:" << pivot << endl;
 
     cout << "pivot element is:" <<arr[pivot];
