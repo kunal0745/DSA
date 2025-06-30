@@ -8,9 +8,10 @@ int main(){
     m["Tha"] = 12;
     m["Bmw"] = 25;
     m["Audi"] = 23;
+    m["Audi"] = 10;
 
-    m.insert({"Swift",24});
-    m.erase("Scorpio");
+    // m.insert({"Swift",24});
+    // m.erase("Scorpio");
 
     for(auto p: m){
         cout << p.first << " " << p.second << endl;

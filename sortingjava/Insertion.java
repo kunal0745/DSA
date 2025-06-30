@@ -32,7 +32,7 @@ public class Insertion {
         System.out.println("Array before sorting:");
         printArray(nums);
 
-        System.out.println("Array after applying selection sort");
+        System.out.println("Array after applying insertion sort");
         insertionSort(nums);
         printArray(nums);
         

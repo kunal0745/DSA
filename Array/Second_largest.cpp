@@ -39,12 +39,13 @@ int secondLargest1(vector <int> &nums){
             slargest = nums[i];
         }
     }
-    return slargest;
+    return (slargest == INT32_MIN) ? -1 : slargest;
+
     // optimal then previous 0(n)
 }
 
 int main(){
-    vector <int> nums = {1,3,5,5,56,56};
+    vector <int> nums = {1,1,1,1};
     // cout << "Second largest is:" << secondLargest(nums) << endl;
     cout << "Second largest is:" << secondLargest1(nums) << endl;
 

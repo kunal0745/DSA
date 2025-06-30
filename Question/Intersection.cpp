@@ -2,9 +2,12 @@
 
 #include <iostream>
 #include <vector>
+#include<algorithm>
 using namespace std;
 
 vector<int> arrayIntersection(vector<int>& A, vector<int>& B) {
+    sort(A.begin(), A.end());
+    sort(B.begin(), B.end());
     int i = 0, j = 0;
     vector<int> result;
 
@@ -24,13 +27,13 @@ vector<int> arrayIntersection(vector<int>& A, vector<int>& B) {
 }
 
 int main() {
-    vector<int> A = {1, 2, 1, 1, 3, 4};
-    vector<int> B = {2, 1, 4, 6};
+    vector<int> A =  {7,3,1};
+    vector<int> B = {1,3,7};
 
     vector<int> intersection = arrayIntersection(A, B);
 
     cout << "Intersection: ";
-    for (int num : intersection) {
+    for (auto num : intersection) {
         cout << num << " ";
     }
     cout << endl;

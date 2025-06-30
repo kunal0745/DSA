@@ -12,10 +12,10 @@
 using namespace std;
 
 void bubbleSort(int arr[], int n){
-    for(int i = 1; i < n; i++){
+    for(int i = n - 1; i >= 0; i--){
 
         bool flag = 0;
-        for(int j = 0; j < n - i; j++){
+        for(int j = 0; j < i; j++){
 
             if(arr[j] > arr[j + 1]){
                 swap(arr[j], arr[j + 1]);
